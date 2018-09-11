@@ -14,11 +14,19 @@ int main()
   //get second input using std::cin>> again with a second variable
   std::cin>>I;
   //determine if first or second is bigger and store that in a third variable
-
-
+  int biggest;
+  if( age < I )
+  {
+    biggest = I;
+  }
+  else
+  {
+   biggest = age;       
+  }
+  
   std::cout<<"Of those two numbers, the biggest is: ";
   //print out the variable representing the biggest number
-
+  std::cout<<biggest;
   std::cout<<std::endl<<"Thank you for playing.\n";
   
   return 0;
